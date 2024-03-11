@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e7d7db;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #49331C;
+}
+body h2 {
+  color: #49331C;
+  text-align: center;
+  padding: 10px;
+}
+body h3 {
+  color: #49331C;
+  padding: 40px;
+}
+body h4 {
+  padding: 5px;
+}
+
+
+/* BARRA DE NAVEGACION */
+header {
+  width: 100%;
+}
+
+header nav {
+  max-width: 90%;
+  margin: 23px auto;
+  background: #BBCDB4;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  z-index: 2;
+}
+
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  color: #49331C;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li i {
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  background: #E5F1E0;
+}
+
+section {
+  padding: 20px;
+}
+
+
+
+
+
+.titulo {
+  text-align: center;
+  color: rgb(71, 34, 9);
+  margin: 30px;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* este es el formulario para que el cliente deje sus datos */
+.parrafo3 {
+  background: linear-gradient(
+    50deg,
+    #E6D3CA,
+    #C59D8C);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  border-radius: 25px;
+}
+.parrafo3 h2 {
+  color: #49331c;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/*pagina de contactanos */
+form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+}
+label {
+  font-size: 18px;
+  color: #49331C;
+  margin-bottom: 10px;
+}
+
+
+
+input , textarea {
+  padding: 17px 14px;
+  background-color: #ffffff;
+  border: 0;
+  font-size: 15px;
+  color: #49331C;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+:focus {
+  outline: 1px solid #49331C;
+}
+
+.btn {
+  background-color:#BBCDB4;
+  width: 150px;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: large;
+}
+.btn:hover {
+  background-color: #E5F1E0;
+}
+
+
+
+
+
+/* este es para que refresque en cada item de la barra de navegacion*/
+
+.parrafo1 {
+    display: block;
+    width: 100%;
+    padding: 40px 40px 40px 40px;
+}
+
+
+/*imagen de las mascaras*/
+.parrafo1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  width: 400px;
+  height: auto;
+}
+
+.parrafo1 .vin {
+  margin-left: 20px;
+}
+
+.parrafo1 button {
+  
+  border: none;
+  color: #49331C;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #4a7239, #BBCDB4);
+  transition: background-image 0.3s ease;
+  font-size: large;
+  font-weight: 900;
+}
+.parrafo1 button:hover {
+  background-image: linear-gradient(to bottom right, #72bd77, #49331C);
+}
+
+.parrafo2 {
+    display: none;
+}
+.parrafo2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  width: 400px;
+  height: auto;
+}
+
+.parrafo3 {
+    display: none;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* boton flotante */
+
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow:  2px 3px 3px  #999;
+  z-index: 999;
+}
+.fa-whatsapp{
+  font-size: 60px;
+}
+.btn-wsp:hover {
+  background-color: rgba(105, 12, 20, 0.014);
+}
+
+
+
+@media(max-width:991px){
+ 
+  .parrafo3 {
+    width: 100%;
+  }
+  .parrafo1{
+    width: 100%;
+  }
+  .parrafo2{
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+
+  header nav {
+    left: -100%;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    padding-top: 70px;
+    
+  }
+
+  header nav ul li{
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(192, 40, 40, 0.3);
+    
+  }
+  .menu {
+    display: block;
+    width: 100%;
+    background: #020804;
+
+  }
+  .menu .bt-menu {
+    display: block;
+    padding: 20px;
+    background: #A28162;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    box-sizing: border-box;
+    
+  }
+
+  /*barra de menu*/ 
+  .menu i {
+    float: right;
+    font-size:40px;
+  }
+
+  /*titulos lunarthe*/
+  .titulo {
+    padding-top: 100px;
+    margin: 0;
+  }
+
+/*este es la imagen de las mascaras*/
+  .parrafo1 img {
+    height: 300px;
+    width: 300px;
+  }
+  .parrafo2 img {
+    height: 300px;
+    width: 300px;
+  }
+}
